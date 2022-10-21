@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+    <title>Music Cloud</title>
+</head>
+
+<body>
+    <!-- START NAV -->
+
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li>
+                <a href="#login">Login</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- END NAV -->
+
+    <form name="f1" action="authentication.php" onsubmit="return validation()" method="POST">
+        <div class="container" id="login">
+        <h1 class="login">Login</h1>
+               <label class="username"> Username: </label>
+                <input type="text" placeholder="Enter username" id="username" name="username" required>
+                <label class="password"> Password: </label>
+                <input type="password" placeholder="Enter password" name="password" required>
+                <button type="submit">Login</button>
+                <!-- <input type="submit" id="btn" value="Login" /> -->
+        </div>
+    </form>
+
+    <script>
+        function validation() {
+            var id = document.f1.user.value;
+            var ps = document.f1.pass.value;
+            if (id.length == "" && ps.length == "") {
+                alert("User Name and Password fields are empty");
+                return false;
+            }
+            else {
+                if (id.length == "") {
+                    alert("User Name is empty");
+                    return false;
+                }
+                if (ps.length == "") {
+                    alert("Password field is empty");
+                    return false;
+                }
+            }
+        }  
+    </script>
+
+    <section id="about" class="about-section">
+        <h2 class="about-header">About Us</h2>
+
+        <div class="projects-grid">
+            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project project-tile">
+                <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+                    alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Tribute Page
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project project-tile">
+                <img class="project-image"
+                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+                    alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Random Quote Machine
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
+                <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
+                    alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    JavaScript Calculator
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="project project-tile">
+                <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
+                    alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Map Data Across the Globe
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank" class="project project-tile">
+                <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
+                    alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Wikipedia Viewer
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+            <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project project-tile">
+                <img class="project-image"
+                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="project" />
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Tic Tac Toe Game
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+        </div>
+
+        <a href="https://codepen.io/FreeCodeCamp/" class="btn btn-show-all" target="_blank">Show all<i
+                class="fas fa-chevron-right"></i></a>
+    </section>
+
+    <!-- END ABOUT -->
+
+    <!-- START CONTACT -->
+
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+            <h2>Let's work together...</h2>
+            <p>How do you take your coffee?</p>
+        </div>
+        <div class="contact-links">
+            <a href="https://facebook.com/deepanshudheer" target="_blank" class="btn contact-details"><i
+                    class="fab fa-facebook-square"></i> Facebook</a>
+            <a id="profile-link" href="https://github.com/deepanshudheer/music_library_system" target="_blank"
+                class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://twitter.com/deepsi03" target="_blank" class="btn contact-details"><i
+                    class="fab fa-twitter"></i> Twitter</a>
+            <a href="mailto:deepsi.awpgod@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a
+                mail</a>
+        </div>
+    </section>
+
+    <!-- END CONTACT -->
+
+    <!-- START FOOTER -->
+
+    <footer>
+        <p>
+            **This is a college assignment.
+        </p>
+        <p>
+            &copy; Created for
+            <a href="https://www.christuniversity.in/" target="_blank">Chirst University <i class="fab"></i></a>
+        </p>
+    </footer>
+
+    <!-- END FOOTER -->
+</body>
+
+</html>
