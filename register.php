@@ -1,14 +1,22 @@
 <?php
 include('connection.php');
-session_start();
+$username = $_REQUEST['username'];
+$password = $_REQUEST['password'];
 
-$user_check=$_SESSION['login_user'];
-$ses_sql=mysqli_query($con,"select username, login_id from login where username='$user_check'");
-$row=mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
-$loggedin_session=$row['username'];
-$loggedin_id=$row['login_id'];
+//to prevent from mysqli injection  
+$username = stripcslashes($username);
+$password = stripcslashes($password);
+$username = mysqli_real_escape_string($con, $username);
+$password = mysqli_real_escape_string($con, $password);
 
-if(!isset($loggedin_session) || $loggedin_session==NULL) {
- echo "Go back";
- header("Location: index.php");
+
+if (isset($_POST['username']) && ($_POST['password'])) {
+    $sql = "insert into login (login_id, username, password) values ('', '$username', '$password')";
+}
+
+if ($con->query($sql) === TRUE) {
+    header("Location: home.html");
+    exit;
+} else {
+    echo "Error: Couldn't register" .mysqli_error($con);
 }
