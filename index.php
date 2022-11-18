@@ -3,8 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
     <title>Music Cloud</title>
@@ -15,7 +14,7 @@
     <nav id="navbar" class="nav">
         <ul class="nav-list">
             <li>
-                <a href="register.html">Register</a>
+                <a href="registerpage.php">Register</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
@@ -23,7 +22,7 @@
         </ul>
     </nav>
     <div class="logo">
-        <a href="index.html">
+        <a href="index.php">
             <img src="files/music_logo.png" class="music_logo">
         </a>
     </div>
@@ -40,19 +39,13 @@
                 <input type="password" placeholder="Enter password" name="password" required>
                 <button type="submit" accesskey="f">Login</button>
                 <div class="register">
-                    <a>Don't have an account yet? <a class="register-here" href="register.html"><u>Register here</u></a></p>
+                    <a>Don't have an account yet? <a class="register-here" href="registerpage.php"><u>Register here</u></a></p>
                 </div>
                 <!-- <input type="submit" id="btn" value="Login" /> -->
             </div>
         </form>
     </section>
     <!-- End LOGIN -->
-
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-    <script src="scripts/validation.js"></script>
-    <script src="scripts/topbutton.js"></script>
 
     <!-- START CONTACT -->
     <section id="contact" class="contact-section">
@@ -61,12 +54,9 @@
             <p>How do you take your coffee?</p>
         </div>
         <div class="contact-links">
-            <a href="https://facebook.com/deepanshudheer" target="_blank" class="btn contact-details"><i
-                    class="fab fa-facebook-square"></i> Facebook</a>
-            <a id="profile-link" href="https://github.com/deepanshudheer/music_library_system" target="_blank"
-                class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://twitter.com/deepsi03" target="_blank" class="btn contact-details"><i
-                    class="fab fa-twitter"></i> Twitter</a>
+            <a href="https://facebook.com/deepanshudheer" target="_blank" class="btn contact-details"><i class="fab fa-facebook-square"></i> Facebook</a>
+            <a id="profile-link" href="https://github.com/deepanshudheer/music_library_system" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://twitter.com/deepsi03" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i> Twitter</a>
             <a href="mailto:deepsi.awpgod@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a
                 mail</a>
         </div>
@@ -92,15 +82,16 @@
         if (params.validationsuccess == "no") {
             setTimeout(() => {
                 alert("Incorrect username or password!")
-                window.location = "index.html";
+                window.location = "index.php";
 
             }, 100)
 
         }
-        // window.onbeforeunload = function () {
-        //         window.scrollTo(0, 0);
-        //     }
     </script>
+
+    <script src="scripts/validation.js"></script>
+    <script src="scripts/topbutton.js"></script>
+
 
 </body>
 
