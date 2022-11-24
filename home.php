@@ -35,7 +35,7 @@
         <!-- PHP CODE TO FETCH DATA FROM ROWS -->
 
         <div id="playlist" class="projects-grid">
-            <a href="playlists/playlist1.php" target="_parent" class="project project-tile">
+            <a href="playlists/1.php" target="_parent" class="project project-tile">
                 <img class="project-image"
                     src="https://images.squarespace-cdn.com/content/v1/5befb3b84611a081dd003798/1542447456369-C6IDY1DIB1A4GQ0JLZ2T/Ibrahim-final.jpg"
                     alt="playlist cover" />
@@ -45,7 +45,7 @@
                     <span class="code">&#47;&gt;</span>
                 </p>
             </a>
-            <a href="playlists/playlist2.php" target="_parent" class="project project-tile">
+            <a href="playlists/2.php" target="_parent" class="project project-tile">
                 <img class="project-image" src="https://i.scdn.co/image/ab67616d00001e0219130c3e840d80db83d14c97"
                     alt="playlist cover" />
                 <p class="project-title">
@@ -54,7 +54,7 @@
                     <span class="code">&#47;&gt;</span>
                 </p>
             </a>
-            <a href="playlists/playlist3.php" target="_parent" class="project project-tile">
+            <a href="playlists/3.php" target="_parent" class="project project-tile">
                 <img class="project-image"
                     src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/41cc4b37210415.5738dba522f25.jpg"
                     alt="playlist cover" />
@@ -64,7 +64,7 @@
                     <span class="code">&#47;&gt;</span>
                 </p>
             </a>
-            <a href="playlists/playlist4.php" target="_parent" class="project project-tile">
+            <a href="playlists/4.php" target="_parent" class="project project-tile">
                 <img class="project-image"
                     src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f5a34e108782021.5fc5820ec88bf.png"
                     alt="playlist cover" />
@@ -74,7 +74,7 @@
                     <span class="code">&#47;&gt;</span>
                 </p>
             </a>
-            <a href="playlists/playlist5.php" target="_parent" class="project project-tile">
+            <a href="playlists/5.php" target="_parent" class="project project-tile">
                 <img class="project-image" src="https://images.template.net/106597/feels-playlist-cover-4s50m.png"
                     alt="playlist cover" />
                 <p class="project-title">
@@ -83,7 +83,7 @@
                     <span class="code">&#47;&gt;</span>
                 </p>
             </a>
-            <a href="playlists/playlist6.php" target="_blank" class="project project-tile">
+            <a href="playlists/6.php" target="_blank" class="project project-tile">
                 <img class="project-image" src="https://i.scdn.co/image/ab67616d0000b27358ecb3e5ec3bbef70ee09e43"
                     alt="playlist cover" />
                 <p class="project-title">
@@ -94,7 +94,7 @@
             </a>
         </div>
 
-        <a href="playlists.php" class="btn btn-show-all" target="_blank">Show all<i
+        <a href="upload_music.php" class="btn btn-show-all" target="_blank">Upload Page<i
                 class="fas fa-chevron-right"></i></a>
     </section>
     <!-- END CURATED PLAYLISTS FOR YOU -->
@@ -107,12 +107,8 @@
 
     <div class="container" id="home">
         <h1 class="home">Home</h1>
-        <!-- <input type="submit" id="btn" value="home" /> -->
     </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-    <script src="scripts/topbutton.js"></script>
     <!-- <script>
         window.onbeforeunload = function () {
                 window.scrollTo(0, 0);
