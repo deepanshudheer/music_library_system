@@ -1,0 +1,40 @@
+:root {
+    --main-purple: #1c0c5b;
+    --main-violet: #3d2c8d;
+    --main-light: #916bbf;
+    --main-pink: #c996cc;
+    --main-white: #f0f0f0;
+    /**/
+    --main-red: #be3144;
+    /**/
+    --main-blue: #45567d;
+    /**/
+    --main-gray: #303841;
+    /**/
+    --yellow: #faf4b7;
+    --pink: #ecc5fb;
+    --white: #f9f9f9;
+    --cyan: #cdf0ea;
+}
+
+table {
+    width: 100%;
+    color: black;
+    position: relative;
+    background-color: var(--main-blue);
+    color: whitesmoke;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #38486f;
+}
+
+.about-header {
+    max-width: 540px;
+    margin: 4rem auto 4rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
+}
