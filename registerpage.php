@@ -42,7 +42,7 @@
 
             <button type="submit" class="registerbtn">Register</button>
             <div class="register">
-                <a class="already">Already have an account? <a class="sign-in" href="index.php"><u>Sign in</u></a></p>
+                <a class="already" href="index.php">Already have an account? <span class="sign-in"><u>Sign in</u></span></a></p>
             </div>
         </div>
     </form>
