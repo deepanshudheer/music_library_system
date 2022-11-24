@@ -39,7 +39,7 @@
                 <input type="password" placeholder="Enter password" name="password" required>
                 <button type="submit" accesskey="f">Login</button>
                 <div class="register">
-                    <a>Don't have an account yet? <a class="register-here" href="registerpage.php"><u>Register here</u></a></p>
+                    <a class="already" href="registerpage.php">Don't have an account yet? <span class="register-here"><u>Register here</u></span></a></p>
                 </div>
                 <!-- <input type="submit" id="btn" value="Login" /> -->
             </div>
@@ -90,8 +90,6 @@
     </script>
 
     <script src="scripts/validation.js"></script>
-    <script src="scripts/topbutton.js"></script>
-
 
 </body>
 
