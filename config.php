@@ -1,16 +1,10 @@
 <?php
-// DB credentials.
-define('DB_HOST','localhost'); // Host name
-define('DB_USER','root'); // db user name
-define('DB_PASS',''); // db user password name
-define('DB_NAME','music_cloud'); // db name
-// Establish database connection.
-try
-{
-$dbh = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME,DB_USER, DB_PASS);
+$host = "localhost";
+$user = "root";
+$password = '';
+$db_name = "music_cloud";
+
+$conn = mysqli_connect($host, $user, $password, $db_name);
+if (mysqli_connect_errno()) {
+    die("Failed to connect with MySQL: " . mysqli_connect_error());
 }
-catch (PDOException $e)
-{
-exit("Error: " . $e->getMessage());
-}
-?>
